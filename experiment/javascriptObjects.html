@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Kayla-kay.GitHub.io by Kayla-kay</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/github-dark.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Kayla-kay Home</a>
+                <a href="https://github.com/Kayla-kay/Kayla-kay.github.io" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            </nav>
+        </header>
+
+        <script type="text/javascript">
+            //Get the first name to put into the object constructor
+            function addFirstName() {
+                //Get the name
+                var r = (document.getElementById('r').value);
+                //Set the name
+                var v = {name: r};
+                document.getElementById('output').innerHTML = "Hello, " + v.name;
+            }
+            //Add the first name to the object constructor
+            function person() {
+                var addFirstName = addFirstName();
+                document.getElementById(addFirstName) = addFirstName;
+            }
+
+        </script>  
+
+
+        Please enter your first name: <input type="text" id="r">
+        <button type="button" onclick="addFirstName()">Add</button>
+        <div id="output"></div>
+    </body>
+
+</body>
+</html>

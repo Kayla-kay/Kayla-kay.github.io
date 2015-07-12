@@ -10,14 +10,14 @@
         
         <script>
             function flavor() {
-                var inputFlavor = document.getElementById('favorite').value;
+                localStorage.set = document.getElementById('favorite').value;
                 
                 if (localStorage.favFlav) {
                     localStorage.setItem ('favorite', 'inputFlavor');
                 } else {
                     document.getElementById("result").innerHTML = "Oops.";
                 }
-                document.getElementById("result").innerHTML = "Yum! " + localStorage.getItem ('inputFlavor') + " is a good flavor.";
+                document.getElementById("result").innerHTML = "Yum! " + localStorage.getItem ('set') + " is a good flavor.";
             }
         </script>
 

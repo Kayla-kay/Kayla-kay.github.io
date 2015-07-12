@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function flavor() {
+                var inputFlavor = document.getElementById('favorite').value;
+                
+                if (localStorage.favFlav) {
+                    localStorage.setItem ('favorite', 'inputFlavor');
+                } else {
+                    document.getElementById("result").innerHTML = "Oops.";
+                }
+                document.getElementById("result").innerHTML = "Yum! " + localStorage.getItem ('inputFlavor') + " is a good flavor.";
+            }
+        </script>
+
+
+        <input type="text" placeholder="Enter your flavor." id="favorite">
+        <button onclick="flavor()" type="button">Click me!</button>
+        <div id="result"></div>
+
+    </body>
+</html>

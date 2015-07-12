@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Kayla-kay.GitHub.io by Kayla-kay</title>
+        <link rel="stylesheet" href="stylesheets/basicStylesheet.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Kayla-kay Home</a>
+                <a href="https://github.com/Kayla-kay/Kayla-kay.github.io" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            </nav>
+        </header>
+        <h1>AJAX Example</h1>
+        <script>
+            function loadXMLDoc()
+            {
+                var xmlhttp = new XMLHttpRequest();
+
+                xmlhttp.onreadystatechange = function ()
+                {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+                    {
+                        document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET", "ajax_info.html", true);
+                xmlhttp.send();
+            }
+        </script>
+
+        <div id="myDiv"><h2>Let AJAX change this text</h2></div>
+        <button type="button" onclick="loadXMLDoc()">Change Content</button>
+
+    </body>
+</html>

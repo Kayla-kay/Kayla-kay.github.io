@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Kayla-kay.GitHub.io by Kayla-kay</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/github-dark.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Kayla-kay Home</a>
+                <a href="https://github.com/Kayla-kay/Kayla-kay.github.io" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            </nav>
+        </header>
+        <p ALIGN="center">We are <b id="hereWeAre">strange</b> but I will love you <b id="finalWord">still</b>.</p>
+
+        <script>
+            //Store the value of the BOLD <b> as variable x
+            var x = document.getElementById('hereWeAre');
+            //Change the BOLD <b> "paragraph" to "bold but of text" using the ID value attribute
+            //document.getElementById('hereWeAre').firstChild.nodeValue="bold bit of text";
+
+            //***********Change the word "strange" to something new***************//
+            //Create a button function to change the first word to divergent
+            function test() {
+                if (document.getElementById && document.createElement) {
+                    wordOne = document.getElementById('hereWeAre').firstChild.nodeValue = "divergent";
+                } else {
+                    alert("Your browser doesn\'t support this level of DOM");
+                }
+            }
+            //Create a button function to change the first word to random
+            function testTwo() {
+                if (document.getElementById && document.createElement) {
+                    wordOne = document.getElementById('hereWeAre').firstChild.nodeValue = "random";
+                } else {
+                    alert("Your browser doesn\'t support this level of DOM");
+                }
+            }
+
+
+            //*************Change the word "still" to something new***************//
+            //Create a button function to change the last word to forever
+            function testThree() {
+                if (document.getElementById && document.createElement) {
+                    wordTwo = document.getElementById('finalWord').lastChild.nodeValue = "forever";
+                } else {
+                    alert("Your browser doesn\'t support this level of DOM");
+                }
+            }
+            //Create a button function to change the last word to always
+            function testFour() {
+                if (document.getElementById && document.createElement) {
+                    wordTwo = document.getElementById('finalWord').lastChild.nodeValue = "always";
+                } else {
+                    alert("Your browser doesn\'t support this level of DOM");
+                }
+            }
+
+
+        </script>
+
+        <h1>Build a Poem</h1>
+
+        Click a button to change the first bold word in the poem: <br>
+        <button type="button" onclick="test()">Divergent</button>
+        <button type="button" onclick="testTwo()">Random</button>
+
+        <br>
+
+        Click a button to change the italic word in the poem: <br>
+        <button type="button" onclick="testThree()">Forever</button>
+        <button type="button" onclick="testFour()">Always</button>
+
+
+    </body>
+</html>
